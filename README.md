@@ -1,4 +1,4 @@
-# BOOLEAN_FUNCTION_MINIMIZATION
+![image](https://github.com/user-attachments/assets/01dc4c54-1bc5-4ed9-867a-4c2e3ff6a79d)# BOOLEAN_FUNCTION_MINIMIZATION
 
 **AIM:**
 
@@ -35,16 +35,33 @@ Hardware – PCs, Cyclone II , USB flasher
 
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:*/
+Developed by: Harsita Easwaran  RegisterNumber: 212224220036
+
+module BooleanFunction(a,b,c,d,f1); 
+input a,b,c,d; 
+output f1; 
+assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c)); 
+endmodule
+
+module BooleanFunction2(w,x,y,z,f2); 
+input w,x,y,z; 
+output f2; 
+assign f2=((~y & z)|( w & y )|(x & y)); 
+endmodule
+
+*/
 
 
 **RTL realization**
 
 **Output:**
+![Screenshot 2025-05-26 205053](https://github.com/user-attachments/assets/17ef2d36-426b-49cf-85c6-dcd112fe21bb)
+![Screenshot 2025-05-26 211137](https://github.com/user-attachments/assets/8b4b5819-6689-45d4-81d0-6372886eb712)
 
-**RTL**
 
 **Timing Diagram**
+![Screenshot 2025-05-26 210225](https://github.com/user-attachments/assets/a2454b44-6d88-48c1-8d78-e88ec936acc6)
+![Screenshot 2025-05-26 211305](https://github.com/user-attachments/assets/e7940c31-a577-47b6-bd6a-521b836fc6a6)
 
 **Result:**
 
